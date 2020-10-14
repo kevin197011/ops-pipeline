@@ -9,6 +9,8 @@ class Main
     sleep(2.0)
 
     system 'echo "hello world!"'
+    system 'ansible --version > /tmp/ansible.txt'
+
 
     warn 'CreateUser has been finished!'
   end
