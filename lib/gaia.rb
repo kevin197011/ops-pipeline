@@ -10,7 +10,7 @@ class Main
 
     # sh = Shell.new
     # sh.pwd()
-    system <<~SHELL.strip_heredoc
+    system <<-SHELL.strip_heredoc
       touch /tmp/{1..5}.txt
       ls /tmp/*
     SHELL
