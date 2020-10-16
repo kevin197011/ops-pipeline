@@ -10,7 +10,6 @@ class Main
 
     sh = Shell.new
     sh.pwd()
-    sh.ls('/tmp')
     warn 'CreateUser has been finished!'
   end
 
