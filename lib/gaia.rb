@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# require 'rubysdk'
+require 'rubysdk'
 
 class Main
   CreateUser = lambda do |_args|
