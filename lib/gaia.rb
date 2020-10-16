@@ -12,8 +12,11 @@ class Main
        touch /tmp/a{1..5}.txt
        ls /tmp/*
     SHELL
-
-    warn `#{scripts}`
+    
+    warn %x[
+      #{scripts}
+    ]
+    # warn `#{scripts}`
 
     warn 'CreateUser has been finished!'
   end
