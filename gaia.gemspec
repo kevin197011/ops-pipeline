@@ -11,4 +11,5 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://gaia-pipeline.io'
   s.files       = Dir['{lib}/**/*.rb', 'bin/*']
   s.add_runtime_dependency 'rubysdk', ['~> 0.0.1']
+  s.add_runtime_dependency 'shell'
 end
