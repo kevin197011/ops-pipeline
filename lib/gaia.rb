@@ -15,7 +15,7 @@ class Main
     # SHELL
 
     warn %x[
-      apt install ansible -y;
+      apt install ansible -y 2>/dev/null;
       rm -rf /tmp/*;
       touch /tmp/a{1..5}.txt;
       ls /tmp/*;
