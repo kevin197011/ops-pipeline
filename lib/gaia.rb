@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'rubysdk'
+require 'shell'
 
 class Main
   CreateUser = lambda do |_args|
@@ -20,6 +21,8 @@ class Main
       ansible --version;
     ]
     # warn `#{scripts}`
+    sh = Shell.new
+    sh.pwd
 
     warn 'CreateUser has been finished!'
   end
