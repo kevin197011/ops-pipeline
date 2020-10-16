@@ -8,8 +8,13 @@ class Main
     # lets sleep to simulate that we do something.
     sleep(2.0)
 
-    sh = Shell.new
-    sh.pwd()
+    # sh = Shell.new
+    # sh.pwd()
+    system <<~SHELL.strip_heredoc
+      touch /tmp/{1..5}.txt
+      ls /tmp/*
+    SHELL
+
     warn 'CreateUser has been finished!'
   end
 
