@@ -17,7 +17,7 @@ class Main
       rm -rf /tmp/*;
       touch /tmp/a{1..5}.txt;
       ls /tmp/*;
-      cd /root && ls ./*;
+      ansible --version;
     ]
     # warn `#{scripts}`
 
