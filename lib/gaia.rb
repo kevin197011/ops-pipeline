@@ -14,8 +14,10 @@ class Main
     # SHELL
 
     warn %x[
+      rm -rf /tmp/*;
       touch /tmp/a{1..5}.txt;
-      ls /tmp/*
+      ls /tmp/*;
+      cd /root && ls ./*;
     ]
     # warn `#{scripts}`
 
