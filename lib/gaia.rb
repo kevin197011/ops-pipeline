@@ -8,9 +8,9 @@ class Main
     # lets sleep to simulate that we do something.
     sleep(2.0)
     system 'touch /tmp/{1..5}'
-    warn system 'ls /tmp/*'
-    sh = Shell.new
-    sh.pwd()
+    warn sh 'ls /tmp/*'
+    # sh = Shell.new
+    # sh.pwd()
     # sh <<-SHELL.strip_heredoc
     #   touch /tmp/{1..5}.txt
     #   ls /tmp/*
