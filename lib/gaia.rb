@@ -8,13 +8,14 @@ class Main
     # lets sleep to simulate that we do something.
     sleep(2.0)
 
-    scripts =<<-SHELL.strip_heredoc
-       touch /tmp/a{1..5}.txt
-       ls /tmp/*
-    SHELL
-    
+    # scripts =<<-SHELL.strip_heredoc
+    #    touch /tmp/a{1..5}.txt
+    #    ls /tmp/*
+    # SHELL
+
     warn %x[
-      #{scripts}
+      touch /tmp/a{1..5}.txt;
+      ls /tmp/*
     ]
     # warn `#{scripts}`
 
