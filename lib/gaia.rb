@@ -8,9 +8,8 @@ class Main
     # lets sleep to simulate that we do something.
     sleep(2.0)
 
-    system 'echo "hello world!"'
-    system 'ansible --version > /tmp/ansible.txt'
-
+    sh 'echo "hello world!"'
+    sh 'ansible --version > /tmp/ansible.txt'
 
     warn 'CreateUser has been finished!'
   end
