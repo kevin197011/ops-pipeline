@@ -22,7 +22,7 @@ class Main
     ]
     # warn `#{scripts}`
     sh = Shell.new
-    sh.pwd
+    warn sh.pwd
 
     warn 'CreateUser has been finished!'
   end
